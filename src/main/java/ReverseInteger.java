@@ -13,6 +13,9 @@ public class ReverseInteger {
             int divPow = (int) Math.pow(10, i);
             int multPow = (int) Math.pow(10, len - i - 1);
             reverse += ((xToUse / divPow) % 10) * multPow;
+            if (reverse < 0) {
+                return 0;
+            }
         }
 
         return (bool) ? -reverse : reverse;
