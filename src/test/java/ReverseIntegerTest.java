@@ -19,5 +19,9 @@ class ReverseIntegerTest {
         assertEquals(-2122222212, objectUnderTest.reverse(-2122222212));
         assertEquals(0, objectUnderTest.reverse(-2122222222));
         assertEquals(0, objectUnderTest.reverse(-2122222222));
+        assertEquals(0, objectUnderTest.reverse(-1023456789));
+
+        // submission failures
+        assertEquals(0, objectUnderTest.reverse(1534236469));
     }
 }
