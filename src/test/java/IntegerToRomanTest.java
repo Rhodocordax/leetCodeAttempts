@@ -14,5 +14,6 @@ class IntegerToRomanTest {
         assertEquals("I", objectUnderTest.intToRoman(1));
         assertEquals("X", objectUnderTest.intToRoman(10));
         assertEquals("CI", objectUnderTest.intToRoman(101));
+        assertEquals("MMMCMXCIX", objectUnderTest.intToRoman(3999));
     }
 }
